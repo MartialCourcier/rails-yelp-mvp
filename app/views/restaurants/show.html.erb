@@ -1,0 +1,21 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    RESTAURANTS
+  </a>
+</nav>
+<ul>
+  <li><%= @restaurant.name %></li>
+  <li><%= @restaurant.address %></li>
+  <li><%= @restaurant.phone_number%></li>
+  <li><%= @restaurant.category%></li>
+</ul>
+  <%= link_to "add review", new_restaurant_review_path(@restaurant)%>
+<%#= form_with model: @restaurant do |f| %>
+  <%#= f.label :name %>
+  <%#= f.text_field :name %>
+  <%#= f.label :address %>
+  <%#= f.text_field :address %>
+  <%#= f.label :phone_number %>
+  <%#= f.text_field :phone_number%>
+  <%#= f.submit %>
+<%# end %>
